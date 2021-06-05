@@ -18,3 +18,6 @@ console.log(list.children)
 for (let i = 0; i < list.children.length; i++) {
     console.log(list.children[i])
 }
+console.log(list.firstElementChild.innerHTML)
+console.log(list.lastElementChild);
+
