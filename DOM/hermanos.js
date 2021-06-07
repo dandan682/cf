@@ -2,7 +2,7 @@ const title = document.getElementById('title')
 title.innerHTML = 'Cursos'
 
 const descripcion = document.getElementById('description')
-description.innerHTML = 'Lista de cursos'
+// description.innerHTML = 'Lista de cursos'
 
 const items = document.querySelectorAll('li:nth-child(even')
 for (let i = 0; i < items.length; i++) {
