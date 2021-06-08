@@ -10,9 +10,15 @@ for (let i = 0; i < items.length; i++) {
     element.style.background = '#c5c0f7'
 }
 
-const element = document.querySelector('div.row > ul.list-group > li')
-console.log(element.parentElement)
-console.log(element.nextElementSibling)
+// const element = document.querySelector('div.row > ul.list-group > li')
+// console.log(element.parentElement)
+// console.log(element.nextElementSibling)
 
-const last_element = document.getElementById('last-course')
-console.log(last_element.previousElementSibling)
+// const last_element = document.getElementById('last-course')
+// console.log(last_element.previousElementSibling)
+
+const button = document.querySelector(".btn.btn-primary")
+
+button.addEventListener('click', function(){
+    console.log("Hola Mundo!")
+})
