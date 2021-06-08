@@ -10,11 +10,21 @@ for (let i = 0; i < items.length; i++) {
     element.style.background = '#c5c0f7'
 }
 
-const input = document.getElementById('input')
+// const input = document.getElementById('input')
 
-input.addEventListener('keydown', function(e) {
-    console.log('Tecla presionada:', e.key, 'con un codigo: ', e.keyCode)
+const form = document.getElementById('course-form')
+
+form.addEventListener('submit', function(e) { 
+    e.preventDefault() 
+    let title = document.getElementById('title-form').value
+    let description = document.getElementById('description-form').value
+    console.log('Title:', title)
+    console.log('Descripcion:', description)
 })
+
+// input.addEventListener('keydown', function(e) {
+//     console.log('Tecla presionada:', e.key, 'con un codigo: ', e.keyCode)
+// })
 
 // const element = document.querySelector('div.row > ul.list-group > li')
 // console.log(element.parentElement)
