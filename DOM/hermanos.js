@@ -19,6 +19,16 @@ for (let i = 0; i < items.length; i++) {
 
 const button = document.querySelector(".btn.btn-primary")
 
-button.addEventListener('click', function(){
+button.addEventListener('dblclick', function(e){
     console.log("Hola Mundo!")
+    console.log(e)
+    if (title.style.display !== 'none') {
+        title.style.display = "none"
+        description.style.display = "none"
+        e.target.textContent = 'Mostrar'
+    } else { 
+        title.style.display = "block"
+        description.style.display = "block"   
+        e.target.textContent = "Ocultar"
+    }
 })
