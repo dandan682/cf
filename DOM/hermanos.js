@@ -19,16 +19,21 @@ for (let i = 0; i < items.length; i++) {
 
 const button = document.querySelector(".btn.btn-primary")
 
-button.addEventListener('dblclick', function(e){
-    console.log("Hola Mundo!")
-    console.log(e)
-    if (title.style.display !== 'none') {
-        title.style.display = "none"
-        description.style.display = "none"
-        e.target.textContent = 'Mostrar'
-    } else { 
-        title.style.display = "block"
-        description.style.display = "block"   
-        e.target.textContent = "Ocultar"
-    }
+button.addEventListener('click', function(e){
+    // console.log("Hola Mundo!")
+    // console.log(e)
+    // if (title.style.display !== 'none') {
+    //     title.style.display = "none"
+    //     description.style.display = "none"
+    //     e.target.textContent = 'Mostrar'
+    // } else { 
+    //     title.style.display = "block"
+    //     description.style.display = "block"   
+    //     e.target.textContent = "Ocultar"
+    // }
+    setTimeout(function(p1, p2, p3) {
+        console.log(p1)
+        console.log(p2)
+        console.log(p3)
+    }, 3000, 'arg1', 'arg2', 'arg3')
 })
