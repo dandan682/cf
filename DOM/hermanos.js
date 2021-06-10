@@ -23,7 +23,9 @@ form.addEventListener('submit', function(e) {
 })
 
 const checkbox = document.getElementById('checkbox')
-checkbox.addEventListener('change', function() {
+let title_form = document.getElementById('title-form')
+
+title_form.addEventListener('change', function() {
     console.log('Cambio de valor')
 })
 
