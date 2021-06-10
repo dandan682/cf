@@ -73,6 +73,8 @@ const body = document.querySelector('body')
 // div_container.addEventListener('click', show_messages) 
 // body.addEventListener('click', show_messages) 
 
+// e.stopPropagation()   
+
 for(let element of document.querySelectorAll('*')) {
     element.addEventListener('click', show_messages)
 }
