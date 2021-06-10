@@ -64,8 +64,12 @@ title_form.addEventListener('change', function() {
 const element = document.querySelector('li')
 const list = document.querySelector('ul')
 const div_row = document.querySelector('.row')
-const div_container = 
-const body = 
+const div_container = document.querySelector('.container')
+const body = document.querySelector('body')
+
+element.addEventListener('click', funcition() {
+    console.log('Elemento:')
+})
 
 
 document.addEventListener('DOMContentLoaded', function() {
