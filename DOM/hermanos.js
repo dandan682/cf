@@ -22,6 +22,11 @@ form.addEventListener('submit', function(e) {
     console.log('Descripcion:', description)
 })
 
+const checkbox = document.getElementById('checkbox')
+checkbox.addEventListener('change', function() {
+    console.log('Cambio de valor')
+})
+
 // input.addEventListener('keydown', function(e) {
 //     console.log('Tecla presionada:', e.key, 'con un codigo: ', e.keyCode)
 // })
