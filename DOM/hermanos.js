@@ -13,13 +13,17 @@ for (let i = 0; i < items.length; i++) {
 // const input = document.getElementById('input')
 
 const form = document.getElementById('course-form')
+const row = document.querySelector('.row')
 
 form.addEventListener('submit', function(e) { 
     e.preventDefault() 
     let title = document.getElementById('title-form').value
     let description = document.getElementById('description-form').value
+
     console.log('Title:', title)
     console.log('Descripcion:', description)
+
+    create_card(title, description)
 })
 
 const checkbox = document.getElementById('checkbox')
@@ -28,6 +32,20 @@ let title_form = document.getElementById('title-form')
 title_form.addEventListener('change', function() {
     console.log('Cambio de valor')
 })
+
+function create_card(title, description) {
+    console.log("create_card")
+    let html = `<div class= "col">\
+        <div class="thumbnail">\
+            <div class="caption">\
+                <h3 id="title_card">${title}</h3>\
+                <p id="description_card">${description}</p>\
+                <p><a href="#" class="btn">Accion</a></p>\
+            </div>\
+        </div>\
+    </div>`
+    row.innerHTML += html 
+}
 
 // input.addEventListener('keydown', function(e) {
 //     console.log('Tecla presionada:', e.key, 'con un codigo: ', e.keyCode)
@@ -61,11 +79,11 @@ title_form.addEventListener('change', function() {
 //     }, 3000, 'arg1', 'arg2', 'arg3')
 // })
 
-const element = document.querySelector('li')
-const list = document.querySelector('ul')
-const div_row = document.querySelector('.row')
-const div_container = document.querySelector('.container')
-const body = document.querySelector('body')
+// const element = document.querySelector('li')
+// const list = document.querySelector('ul')
+// const div_row = document.querySelector('.row')
+// const div_container = document.querySelector('.container')
+// const body = document.querySelector('body')
 
 // element.addEventListener('click', show_messages) 
 // list.addEventListener('click', show_messages) 
@@ -75,15 +93,15 @@ const body = document.querySelector('body')
 
 // e.stopPropagation()   
 
-for(let element of document.querySelectorAll('*')) {
-    element.addEventListener('click', show_messages)
-}
+// for(let element of document.querySelectorAll('*')) {
+//     element.addEventListener('click', show_messages)
+// }
 
-function show_messages(e) {
-    console.log('Elemento actual (this):', this.tagName)
-    console.log('Elemento que disparo el evento (e.target):', e.target.tagName)
-    console.log("\n")
-}
+// function show_messages(e) {
+//     console.log('Elemento actual (this):', this.tagName)
+//     console.log('Elemento que disparo el evento (e.target):', e.target.tagName)
+//     console.log("\n")
+// }
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     console.log('Hola Mundo!')
