@@ -48,6 +48,10 @@ function create_card(title, description) {
     let p2 = document.createElement('p')
     let a = document.createElement('a')
     a.classname = 'btn'
+    a.textContent = 'Eliminar'
+    let link = document.createTextNode('')
+    a.appendChild(link)
+    a.href = '#'
 
     p2.appendChild(a)
     caption.appendChild(h3)
