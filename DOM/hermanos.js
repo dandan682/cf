@@ -61,3 +61,13 @@ title_form.addEventListener('change', function() {
 //     }, 3000, 'arg1', 'arg2', 'arg3')
 // })
 
+const element = document.querySelector('li')
+const list = document.querySelector('ul')
+const div_row = document.querySelector('.row')
+const div_container = 
+const body = 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Hola Mundo!')
+})
