@@ -63,6 +63,10 @@ function create_card(title, description) {
     row.appendChild(div)
 }
 
+function delete_card() {
+    console.log('Borrar card')
+}
+
 function create_card_by_InnerHTML(title, description) {
     console.log("create_card")
     let html = `<div class= "col">\
